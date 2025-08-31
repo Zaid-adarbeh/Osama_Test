@@ -1,0 +1,43 @@
+{
+  "dashboard": {
+    "title": "Tabbed Time Series Demo",
+    "timezone": "browser",
+    "panels": [
+      {
+        "type": "myorg-tabbed-timeseries-panel",
+        "title": "Tabbed Time Series",
+        "datasource": null,
+        "targets": [
+          {
+            "refId": "A",
+            "datasource": {
+              "type": "grafana-testdata-datasource",
+              "uid": "testdata"
+            },
+            "scenarioId": "random_walk"
+          },
+          {
+            "refId": "B",
+            "datasource": {
+              "type": "grafana-testdata-datasource",
+              "uid": "testdata"
+            },
+            "scenarioId": "random_walk"
+          }
+        ],
+        "options": {
+          "initialQueryRefId": "A",
+          "rememberLast": true
+        },
+        "fieldConfig": {
+          "defaults": {},
+          "overrides": []
+        },
+        "gridPos": { "h": 9, "w": 12, "x": 0, "y": 0 }
+      }
+    ],
+    "schemaVersion": 38,
+    "version": 1
+  },
+  "overwrite": false
+}
