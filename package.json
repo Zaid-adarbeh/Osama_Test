@@ -1,0 +1,21 @@
+{
+  "name": "tabbed-timeseries-panel",
+  "version": "1.0.0",
+  "description": "Grafana panel plugin that shows one query at a time with tabs",
+  "scripts": {
+    "build": "grafana-toolkit plugin:build",
+    "test": "echo 'No tests'"
+  },
+  "keywords": ["grafana", "panel", "timeseries", "tabs"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@grafana/data": "^11.4.0",
+    "@grafana/ui": "^11.4.0",
+    "@grafana/runtime": "^11.4.0"
+  },
+  "devDependencies": {
+    "@grafana/toolkit": "^11.4.0",
+    "typescript": "^5.0.0"
+  }
+}
